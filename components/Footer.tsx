@@ -17,7 +17,7 @@ export default function Footer() {
                         MSM<span className="text-primary">.</span>
                     </span>
                     <p className="text-xs text-gray-500 mt-2">
-                        © 2024 MSM Events. All rights reserved.
+                        © 2026 MSM Events. All rights reserved.
                     </p>
                 </motion.div>
                 <motion.div

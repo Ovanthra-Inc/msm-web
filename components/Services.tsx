@@ -99,10 +99,11 @@ export default function Services() {
                                         viewport={{ once: true }}
                                         transition={{ duration: 0.5, delay: index * 0.05 }}
                                         className="border-b border-white/10"
+
                                     >
                                         <button
                                             onClick={() => toggleOpen(service.id)}
-                                            className="w-full text-left py-6 group flex items-center justify-between focus:outline-none"
+                                            className="w-full text-left py-6 group flex items-center justify-between focus:outline-none cursor-pointer"
                                         >
                                             <div className="flex items-baseline gap-6">
                                                 <span

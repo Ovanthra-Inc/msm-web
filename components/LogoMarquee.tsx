@@ -19,18 +19,18 @@ export default function LogoMarquee() {
             <div className="overflow-hidden relative w-full">
                 <div className="flex items-center space-x-12 animate-marquee whitespace-nowrap opacity-60 dark:opacity-40 grayscale hover:grayscale-0 transition-all duration-500">
                     {[
-                        "VOGUE",
-                        "Cartier",
-                        "TESLA",
-                        "Google",
-                        "Spotify",
-                        "CHANEL",
-                        "Hermès",
-                        "McKinsey & Co",
-                        "VOGUE",
-                        "Cartier",
-                        "TESLA",
-                        "Google",
+                        "Keekoo",
+                        "Asian Paints",
+                        "Zepto",
+                        "Techno Rail",
+                        // "Spotify",
+                        // "CHANEL",
+                        // "Hermès",
+                        // "McKinsey & Co",
+                        // "VOGUE",
+                        // "Cartier",
+                        // "TESLA",
+                        // "Google",
                     ].map((logo, index) => (
                         <span key={index} className="text-2xl font-display font-bold px-8">
                             {logo}

@@ -4,7 +4,7 @@ import { motion } from "motion/react";
 
 export default function PresenceMap() {
     return (
-        <section className="relative flex w-full flex-col overflow-hidden bg-background-light dark:bg-background-dark py-10 px-4 md:px-10 lg:px-20 font-display transition-colors duration-300">
+        <section id="presence" className="relative flex w-full flex-col overflow-hidden bg-background-light dark:bg-background-dark py-10 px-4 md:px-10 lg:px-20 font-display transition-colors duration-300">
             <div className="w-full max-w-7xl mx-auto">
                 <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
                     {/* Left Column: Content & List */}
@@ -51,7 +51,7 @@ export default function PresenceMap() {
                             </div>
                         </motion.div>
                         {/* City List (Interactive) */}
-                        <motion.div
+                        {/* <motion.div
                             initial={{ opacity: 0 }}
                             whileInView={{ opacity: 1 }}
                             viewport={{ once: true }}
@@ -133,7 +133,7 @@ export default function PresenceMap() {
                                     </div>
                                 </div>
                             ))}
-                        </motion.div>
+                        </motion.div> */}
                     </div>
                     {/* Right Column: Map Visualization */}
                     <motion.div
@@ -155,7 +155,7 @@ export default function PresenceMap() {
                             />
                             {/* Pins Layer */}
                             {/* Delhi Pin (Top North) */}
-                            <div className="absolute top-[28%] left-[32%] group">
+                            <div className="absolute top-[30%] left-[39%] group">
                                 <div className="relative flex items-center justify-center w-4 h-4">
                                     <div className="absolute w-3 h-3 bg-primary rounded-full z-10 shadow-[0_0_10px_var(--color-primary)]"></div>
                                     <div className="pin-ring w-full h-full absolute"></div>
@@ -165,35 +165,92 @@ export default function PresenceMap() {
                                     New Delhi
                                 </div>
                             </div>
-                            {/* Kolkata Pin (East) */}
-                            <div className="absolute top-[45%] right-[22%] group">
+                            {/* Assam Pin (East) */}
+                            <div className="absolute top-[38%] right-[23%] group">
                                 <div className="relative flex items-center justify-center w-4 h-4">
                                     <div className="absolute w-3 h-3 bg-white dark:bg-primary/60 rounded-full z-10 transition-colors group-hover:bg-primary shadow-[0_0_10px_rgba(255,255,255,0.3)] dark:shadow-[0_0_10px_rgba(242,185,13,0.3)]"></div>
                                 </div>
                                 <div className="absolute bottom-full left-1/2 -translate-x-1/2 mb-2 px-3 py-1 bg-gray-900 text-white text-xs rounded opacity-0 group-hover:opacity-100 transition-opacity whitespace-nowrap border border-gray-700">
-                                    Kolkata
+                                    Assam
                                 </div>
                             </div>
-                            {/* Mumbai Pin (West Coast) - Main Active */}
-                            <div className="absolute top-[58%] left-[18%] group">
-                                <div className="relative flex items-center justify-center w-6 h-6">
-                                    <div className="absolute w-4 h-4 bg-primary rounded-full z-10 shadow-[0_0_20px_var(--color-primary)]"></div>
+
+                            {/* Kolkata Pin (East) */}
+                            <div className="absolute top-[48%] right-[35%] group">
+                                <div className="relative flex items-center justify-center w-4 h-4">
+                                    <div className="absolute w-3 h-3 bg-white dark:bg-primary/60 rounded-full z-10 transition-colors group-hover:bg-primary shadow-[0_0_10px_rgba(255,255,255,0.3)] dark:shadow-[0_0_10px_rgba(242,185,13,0.3)]"></div>
                                     <div className="pin-ring w-full h-full absolute scale-150"></div>
+                                    <div className="absolute w-3 h-3 bg-primary rounded-full z-10 "></div>
                                 </div>
-                                {/* Permanent Label for Active City */}
-                                <div className="absolute left-full ml-3 top-1/2 -translate-y-1/2">
+                                <div className="absolute bottom-full left-1/2 -translate-x-1/2 mb-2">
+                                    {/* Kolkata */}
                                     <div className="bg-primary/10 backdrop-blur-md border border-primary/30 px-3 py-1.5 rounded-lg flex flex-col">
                                         <span className="text-xs font-bold text-primary uppercase tracking-wider">
-                                            Mumbai
+                                            Kolkata
                                         </span>
                                         <span className="text-[10px] text-white/80">
                                             Active Events: 12
                                         </span>
+                                    </div> 
+                                </div>
+                            </div>
+
+                            {/* Bihar Pin (East) */}
+                            <div className="absolute top-[40%] right-[40%] group">
+                                <div className="relative flex items-center justify-center w-4 h-4">
+                                    <div className="absolute w-3 h-3 bg-white dark:bg-primary/60 rounded-full z-10 transition-colors group-hover:bg-primary shadow-[0_0_10px_rgba(255,255,255,0.3)] dark:shadow-[0_0_10px_rgba(242,185,13,0.3)]"></div>
+                                    <div className="pin-ring w-full h-full absolute scale-150"></div>
+                                    <div className="absolute w-3 h-3 bg-primary rounded-full z-10 "></div>
+                                </div>
+                                <div className="absolute bottom-full left-1/2 -translate-x-1/2 mb-2">
+                                    <div className="bg-primary/10 backdrop-blur-md border border-primary/30 px-3 py-1.5 rounded-lg flex flex-col">
+                                        <span className="text-xs font-bold text-primary uppercase tracking-wider">
+                                            Bihar
+                                        </span>
+                                        <span className="text-[10px] text-white/80">
+                                            Active Events: 5
+                                        </span>
                                     </div>
                                 </div>
                             </div>
+                            {/* Bhwbenswar Pin (East) */}
+                            <div className="absolute top-[48%] right-[35%] group">
+                                <div className="relative flex items-center justify-center w-4 h-4">
+                                    <div className="absolute w-3 h-3 bg-white dark:bg-primary/60 rounded-full z-10 transition-colors group-hover:bg-primary shadow-[0_0_10px_rgba(255,255,255,0.3)] dark:shadow-[0_0_10px_rgba(242,185,13,0.3)]"></div>
+                                    <div className="pin-ring w-full h-full absolute scale-150"></div>
+                                    {/* <div className="absolute w-3 h-3 bg-primary rounded-full z-10 "></div> */}
+                                </div>
+                                <div className="absolute left-full ml-3 top-1/2 -translate-y-1/2 px-3 py-1  bg-gray-900 text-white text-xs rounded opacity-0 group-hover:opacity-100 transition-opacity whitespace-nowrap border border-gray-700">
+                                    Bhwbenswar
+                                </div>
+                            </div>
+                            {/* Sikkim Pin (East) */}
+                            <div className="absolute top-[35%] right-[37%] group">
+                                <div className="relative flex items-center justify-center w-4 h-4">
+                                    <div className="absolute w-3 h-3 bg-white dark:bg-primary/60 rounded-full z-10 transition-colors group-hover:bg-primary shadow-[0_0_10px_rgba(255,255,255,0.3)] dark:shadow-[0_0_10px_rgba(242,185,13,0.3)]"></div>
+                                    <div className="pin-ring w-full h-full absolute scale-150"></div>
+                                    {/* <div className="absolute w-3 h-3 bg-primary rounded-full z-10 "></div> */}
+                                </div>
+                                <div className="absolute left-full ml-3 top-1/2 -translate-y-1/2 px-3 py-1  bg-gray-900 text-white text-xs rounded opacity-0 group-hover:opacity-100 transition-opacity whitespace-nowrap border border-gray-700">
+                                    Sikkim
+                                </div>
+                            </div>
+
+
+
+                            {/* Mumbai Pin (West Coast) - Main Active */}
+                            <div className="absolute top-[58%] left-[30%] group">
+                                <div className="relative flex items-center justify-center w-6 h-6">
+                                    <div className="absolute w-4 h-4 bg-primary rounded-full z-10 shadow-[0_0_20px_var(--color-primary)]"></div>
+                                    <div className="absolute w-3 h-3 bg-primary rounded-full z-10 "></div>
+                                </div>
+                                {/* Permanent Label for Active City */}
+                                <div className="absolute left-full ml-3 top-1/2 -translate-y-1/2 px-3 py-1  bg-gray-900 text-white text-xs rounded opacity-0 group-hover:opacity-100 transition-opacity whitespace-nowrap border border-gray-700">
+                                    Mumbai
+                                </div>
+                            </div>
                             {/* Hyderabad Pin (Central South) */}
-                            <div className="absolute top-[65%] left-[38%] group">
+                            <div className="absolute top-[60%] left-[42%] group">
                                 <div className="relative flex items-center justify-center w-4 h-4">
                                     <div className="absolute w-3 h-3 bg-white dark:bg-primary/60 rounded-full z-10 transition-colors group-hover:bg-primary shadow-[0_0_10px_rgba(255,255,255,0.3)] dark:shadow-[0_0_10px_rgba(242,185,13,0.3)]"></div>
                                 </div>
@@ -203,7 +260,7 @@ export default function PresenceMap() {
                                 </div>
                             </div>
                             {/* Bengaluru Pin (South) */}
-                            <div className="absolute top-[75%] left-[32%] group">
+                            <div className="absolute top-[72%] left-[40%] group">
                                 <div className="relative flex items-center justify-center w-4 h-4">
                                     <div className="absolute w-3 h-3 bg-white dark:bg-primary/60 rounded-full z-10 transition-colors group-hover:bg-primary shadow-[0_0_10px_rgba(255,255,255,0.3)] dark:shadow-[0_0_10px_rgba(242,185,13,0.3)]"></div>
                                 </div>

@@ -51,7 +51,7 @@ export default function About() {
                                 <img
                                     alt="Founder Portrait"
                                     className="w-full h-full object-cover"
-                                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuA2UpVaSB4fd8SqlD4Dn7YgcXjtcg-9rAUmBHG5J2JOz4jXCJHlYjHxFP97RsSK3KmyanUJ_qD1Ud31DITnAx44-HmdkRPr12QcV2NdbNUwSzI4Q1S-y2ZeLLY1bdbBkcEQkVjmG3kfKbwbuhqNl0S8HWQGIwAgseP2i62w7NN8EHMkooMxQwh6CGsV344tclc6wDpDHbj_eVCWxuQTedytztPb02DpkVRUgpqgdb79VuFypPVDB4xyQ3fIHmt6b73CzDHtHf-wegr8"
+                                    src="/assets/team/tm.jpg"
                                 />
                                 <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-50"></div>
                             </div>
@@ -72,24 +72,16 @@ export default function About() {
                             </h2>
                             <div className="space-y-6 text-gray-400 font-light leading-relaxed text-lg">
                                 <p>
-                                    "Events are not just gatherings; they are the architecture of
-                                    memory. We build spaces where time stands still and emotions
-                                    run deep."
+                                    "MSM Events & Advertisements creates impactful events and brand activations with reliable execution across India."
                                 </p>
                                 <p className="text-sm md:text-base">
-                                    With over a decade in high-fashion event production, our
-                                    philosophy is rooted in the belief that true luxury lies in
-                                    the unseen details. We don't just organize; we orchestrate.
-                                    From the interplay of shadow and light to the curated
-                                    soundscapes, every element is designed to evoke a specific
-                                    feeling, crafting a narrative that resonates with the soul of
-                                    the brand.
+                                    We partner with leading brands to execute corporate events, exhibitions, product launches, and on-ground activations combining creativity, operational excellence, and reliable manpower to elevate brand presence and engage real audiences.
                                 </p>
                             </div>
                             <div className="mt-10 flex items-center gap-4">
                                 <div className="h-[1px] w-12 bg-primary"></div>
                                 <span className="font-display text-2xl text-white italic">
-                                    Elena Vause
+                                    Madhu Sudan Mondal
                                 </span>
                                 <span className="text-xs text-gray-500 uppercase tracking-widest ml-2">
                                     Founder &amp; Creative Director

@@ -62,11 +62,18 @@ export default function Navbar() {
                             About
                         </a>
                         <a
+                            href="#presence"
+                            onClick={(e) => scrollToSection(e, "presence")}
+                            className="text-sm font-medium hover:text-primary transition-colors text-gray-700 dark:text-gray-300"
+                        >
+                            Presence
+                        </a>
+                        <a
                             href="#quiz"
                             onClick={(e) => scrollToSection(e, "quiz")}
                             className="bg-white dark:bg-white/10 dark:hover:bg-primary text-gray-900 dark:text-white px-5 py-2 rounded-full text-sm font-medium border border-gray-200 dark:border-white/20 transition-all hover:bg-gray-50 hover:shadow-lg"
                         >
-                            Let's Talk
+                            Contact Us
                         </a>
                     </div>
                     <div className="md:hidden flex items-center">

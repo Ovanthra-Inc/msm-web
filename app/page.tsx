@@ -11,11 +11,12 @@ import Services from "@/components/Services";
 import VideoShowcase from "@/components/VideoShowcase";
 import Process from "@/components/Process";
 import Quiz from "@/components/Quiz";
-import LogoMarquee from "@/components/LogoMarquee";
+// import LogoMarquee from "@/components/LogoMarquee";
 import CTA from "@/components/CTA";
 import Footer from "@/components/Footer";
 import RateModal from "@/components/RateModal";
 import WhatsAppFAB from "@/components/WhatsAppFAB";
+import Collaborators from "@/components/Collaborators";
 
 export default function Home() {
   const [isRateModalOpen, setIsRateModalOpen] = useState(false);
@@ -31,7 +32,8 @@ export default function Home() {
       <WhatsAppFAB />
       <Navbar />
       <Hero />
-      <LogoMarquee />
+      {/* <LogoMarquee /> */}
+      <Collaborators/>
       <About />
       <EventCatalogue />
       <VideoShowcase />

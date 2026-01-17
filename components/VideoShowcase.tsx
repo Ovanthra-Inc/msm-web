@@ -51,7 +51,7 @@ export default function VideoShowcase() {
                         {/* Video Overlay Info */}
                         <div className="absolute bottom-6 left-6 md:bottom-10 md:left-10 text-white z-10">
                             <div className="bg-primary/90 text-background-dark text-xs font-bold px-3 py-1 rounded-full w-fit mb-2 uppercase tracking-wider">
-                                Showreel 2024
+                                Ongoing Projects
                             </div>
                             <h3 className="text-2xl md:text-3xl font-medium tracking-wide">
                                 Cinematic Highlights
