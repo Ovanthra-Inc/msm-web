@@ -10,11 +10,11 @@ import Team from "@/components/Team";
 import Services from "@/components/Services";
 import VideoShowcase from "@/components/VideoShowcase";
 import Process from "@/components/Process";
-import Quiz from "@/components/Quiz";
+import Contact from "@/components/Contact";
 // import LogoMarquee from "@/components/LogoMarquee";
 import CTA from "@/components/CTA";
 import Footer from "@/components/Footer";
-import RateModal from "@/components/RateModal";
+// import RateModal from "@/components/RateModal";
 import WhatsAppFAB from "@/components/WhatsAppFAB";
 import Collaborators from "@/components/Collaborators";
 
@@ -28,20 +28,20 @@ export default function Home() {
 
   return (
     <>
-      <RateModal isOpen={isRateModalOpen} onClose={() => setIsRateModalOpen(false)} />
+      {/* <RateModal isOpen={isRateModalOpen} onClose={() => setIsRateModalOpen(false)} /> */}
       <WhatsAppFAB />
       <Navbar />
       <Hero />
       {/* <LogoMarquee /> */}
-      <Collaborators/>
       <About />
       <EventCatalogue />
       <VideoShowcase />
       <Services />
       <Process />
-      <Quiz />
+      <Contact />
       <Team />
       <PresenceMap />
+      <Collaborators/>
       <CTA />
       <Footer />
     </>

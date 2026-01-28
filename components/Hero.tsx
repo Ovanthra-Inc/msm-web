@@ -42,7 +42,7 @@ export default function Hero() {
                 >
                     <a
                         className="bg-white text-black px-8 py-4 rounded-full font-medium hover:bg-gray-100 transition-all transform hover:scale-105 shadow-[0_0_20px_rgba(255,255,255,0.3)] flex items-center gap-2"
-                        href="#quiz"
+                        href="#contact"
                     >
                         Contact Us
                         <span className="material-icons-outlined text-sm">

@@ -40,12 +40,30 @@
   /* Common Colors */
   --primary: #C5A059;
   --primary-hover: #B08D45;
+  --primary-foreground: #FFFFFF;
 
   /* Light Mode Defaults */
   --background: #F9FAFB;
   --foreground: #171717;
   --surface: #FFFFFF;
   --border: #E5E7EB;
+  
+  --muted: #F3F4F6;
+  --muted-foreground: #6B7280;
+  
+  --accent: #F3F4F6;
+  --accent-foreground: #111827;
+  
+  --popover: #FFFFFF;
+  --popover-foreground: #171717;
+  
+  --card: #FFFFFF;
+  --card-foreground: #171717;
+  
+  --input: #E5E7EB;
+  --ring: #C5A059;
+  
+  --radius: 0.5rem;
 }
 
 /* Dark Mode Overrides */
@@ -55,6 +73,21 @@
   --foreground: #ededed;
   --surface: #121212;
   --border: #27272a;
+  
+  --muted: #27272a;
+  --muted-foreground: #a1a1aa;
+  
+  --accent: #27272a;
+  --accent-foreground: #ededed;
+  
+  --popover: #050505;
+  --popover-foreground: #ededed;
+  
+  --card: #121212;
+  --card-foreground: #ededed;
+  
+  --input: #27272a;
+  --ring: #C5A059;
 }
 
 /* Layout & Reset */

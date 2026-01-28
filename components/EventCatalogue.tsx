@@ -112,11 +112,11 @@ export default function EventCatalogue() {
                                 </h3>
                                 <p className="text-sm text-gray-500 mt-1">{event.tags}</p>
                             </div>
-                            <button className="w-10 h-10 rounded-full border border-gray-200 dark:border-gray-700 flex items-center justify-center group-hover:bg-primary group-hover:border-primary group-hover:text-white transition-all">
+                            {/* <button className="w-10 h-10 rounded-full border border-gray-200 dark:border-gray-700 flex items-center justify-center group-hover:bg-primary group-hover:border-primary group-hover:text-white transition-all">
                                 <span className="material-icons-outlined text-sm">
                                     arrow_outward
                                 </span>
-                            </button>
+                            </button> */}
                         </div>
                     </motion.div>
                 ))}

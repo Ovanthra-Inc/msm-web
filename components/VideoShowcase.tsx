@@ -38,7 +38,7 @@ export default function VideoShowcase() {
                         {/* Overlay Gradient */}
                         <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent"></div>
                         {/* Play Button */}
-                        <div className="absolute inset-0 flex items-center justify-center">
+                        {/* <div className="absolute inset-0 flex items-center justify-center">
                             <button className="glass-btn flex items-center justify-center rounded-full size-20 md:size-24 text-primary hover:scale-105 hover:bg-black/40 transition-all duration-300 group cursor-pointer">
                                 <span
                                     className="material-icons-outlined fill-current"
@@ -47,7 +47,7 @@ export default function VideoShowcase() {
                                     play_arrow
                                 </span>
                             </button>
-                        </div>
+                        </div> */}
                         {/* Video Overlay Info */}
                         <div className="absolute bottom-6 left-6 md:bottom-10 md:left-10 text-white z-10">
                             <div className="bg-primary/90 text-background-dark text-xs font-bold px-3 py-1 rounded-full w-fit mb-2 uppercase tracking-wider">
@@ -85,14 +85,14 @@ export default function VideoShowcase() {
                         <h3 className="text-gray-900 dark:text-white text-2xl font-medium italic">
                             Latest Productions
                         </h3>
-                        <div className="flex gap-2">
+                        {/* <div className="flex gap-2">
                             <button className="size-10 rounded-full border border-gray-900/20 dark:border-white/20 flex items-center justify-center text-gray-900 dark:text-white hover:bg-black/10 dark:hover:bg-white/10 hover:border-primary/50 hover:text-primary transition-all">
                                 <span className="material-icons-outlined">arrow_back</span>
                             </button>
                             <button className="size-10 rounded-full border border-gray-900/20 dark:border-white/20 flex items-center justify-center text-gray-900 dark:text-white hover:bg-black/10 dark:hover:bg-white/10 hover:border-primary/50 hover:text-primary transition-all">
                                 <span className="material-icons-outlined">arrow_forward</span>
                             </button>
-                        </div>
+                        </div> */}
                     </div>
                     {/* Carousel Wrapper */}
                     <div className="w-full overflow-x-auto pb-8 [-ms-scrollbar-style:none] [scrollbar-width:none] [&::-webkit-scrollbar]:hidden">

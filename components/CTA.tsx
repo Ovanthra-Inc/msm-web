@@ -35,7 +35,7 @@ export default function CTA() {
                 >
                     <a
                         className="group relative px-10 py-5 bg-white text-black font-bold rounded-full overflow-hidden shadow-[0_0_25px_rgba(255,255,255,0.2)] hover:shadow-[0_0_35px_rgba(197,160,89,0.4)] transition-all duration-300 hover:scale-105"
-                        href="#"
+                        href="#contact"
                     >
                         <span className="relative z-10 flex items-center gap-2">
                             Let's Connect
