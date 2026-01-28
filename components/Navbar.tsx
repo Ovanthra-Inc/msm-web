@@ -142,17 +142,20 @@ export default function Navbar() {
                                                         {column.title}
                                                     </h4>
                                                     <ul className="grid gap-1">
-                                                        {column.items.map((item, itemIndex) => (
-                                                            <ListItem
-                                                                key={itemIndex}
-                                                                href="#services"
-                                                                title={item.title}
-                                                                icon={item.icon}
-                                                                onClick={(e) => scrollToSection(e, "services")}
-                                                            >
-                                                                {item.description}
-                                                            </ListItem>
-                                                        ))}
+                                                        {column.items.map((item, itemIndex) => {
+                                                            const slug = item.title.toLowerCase().replace(/\s+/g, '-').replace(/[^\w-]+/g, '');
+                                                            return (
+                                                                <ListItem
+                                                                    key={itemIndex}
+                                                                    href={`/services/${slug}`}
+                                                                    title={item.title}
+                                                                    icon={item.icon}
+                                                                    className="rounded-lg border-b-0 hover:border-0"
+                                                                >
+                                                                    {item.description}
+                                                                </ListItem>
+                                                            )
+                                                        })}
                                                     </ul>
                                                 </div>
                                             ))}
@@ -229,20 +232,20 @@ export default function Navbar() {
                                                     {services.map((column, index) => (
                                                         <div key={index} className="flex flex-col gap-2">
                                                             <h4 className="text-sm font-medium text-muted-foreground mb-2 uppercase">{column.title}</h4>
-                                                            {column.items.map((item, itemIndex) => (
-                                                                <a
-                                                                    key={itemIndex}
-                                                                    href="#services"
-                                                                    onClick={(e) => {
-                                                                        scrollToSection(e, "services");
-                                                                        setIsOpen(false);
-                                                                    }}
-                                                                    className="flex items-center gap-2 py-2 text-sm text-foreground hover:text-orange-500"
-                                                                >
-                                                                    <div className="h-1.5 w-1.5 rounded-full bg-orange-500/50" />
-                                                                    {item.title}
-                                                                </a>
-                                                            ))}
+                                                            {column.items.map((item, itemIndex) => {
+                                                                const slug = item.title.toLowerCase().replace(/\s+/g, '-').replace(/[^\w-]+/g, '');
+                                                                return (
+                                                                    <Link
+                                                                        key={itemIndex}
+                                                                        href={`/services/${slug}`}
+                                                                        onClick={() => setIsOpen(false)}
+                                                                        className="flex items-center gap-2 py-2 text-sm text-foreground hover:text-orange-500"
+                                                                    >
+                                                                        <div className="h-1.5 w-1.5 rounded-full bg-orange-500/50" />
+                                                                        {item.title}
+                                                                    </Link>
+                                                                )
+                                                            })}
                                                         </div>
                                                     ))}
                                                 </div>
@@ -297,13 +300,13 @@ const ListItem = React.forwardRef<
     return (
         <li>
             <NavigationMenuLink asChild>
-                <a
+                <Link
                     ref={ref}
                     className={cn(
                         "group block select-none p-4 leading-none no-underline outline-none transition-all duration-200 hover:bg-primary/5 focus:bg-primary/5 rounded-lg border border-transparent hover:border-primary/20",
                         className
                     )}
-                    {...props}
+                    {...props as any}
                 >
                     <div className="flex items-start gap-4">
                         {icon && <div className="mt-0.5 text-muted-foreground group-hover:text-primary transition-colors duration-200">{icon}</div>}
@@ -323,7 +326,7 @@ const ListItem = React.forwardRef<
                             )}
                         </div>
                     </div>
-                </a>
+                </Link>
             </NavigationMenuLink>
         </li>
     )
