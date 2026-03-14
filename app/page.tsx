@@ -17,6 +17,7 @@ import Footer from "@/components/Footer";
 // import RateModal from "@/components/RateModal";
 import WhatsAppFAB from "@/components/WhatsAppFAB";
 import Collaborators from "@/components/Collaborators";
+import WeddingSection from "@/components/WeddingSection";
 
 export default function Home() {
   const [isRateModalOpen, setIsRateModalOpen] = useState(false);
@@ -32,6 +33,7 @@ export default function Home() {
       <WhatsAppFAB />
       <Navbar />
       <Hero />
+      <WeddingSection />
       {/* <LogoMarquee /> */}
       <About />
       <EventCatalogue />

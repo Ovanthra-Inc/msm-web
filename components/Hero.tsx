@@ -9,7 +9,7 @@ export default function Hero() {
                 <img
                     alt="Luxury event atmosphere"
                     className="w-full h-full object-cover"
-                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuBI0EBo19fdXk435jOzfSAMpftMhn9hS0sfgOi3EMEO6uzqCUhBuIehmatQ1W-RrX35il6UyI9UfHhqJufmV5iBIhIeMi5agixzU-rt6r4i_Mp5m0HtB2lOFySEILZfn24Tt7-Jp5ne9EZbgCAWKMHIwdRq5_FSztQZSGNSFXnIcqOIRCse_y6dGqg07Ak1vE1ZYNAN3j6xHuJeQANrdl5FDc6uBtM5gv8O3onVm8wrMhnP8e9uoyMt4amg6IIFDYji6_pU93ON2CB5"
+                    src="/images/hero-golden-image.png"
                 />
                 <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-black/40 to-background-dark/95"></div>
             </div>

@@ -65,11 +65,11 @@ export default function Services() {
                             transition={{ duration: 0.8 }}
                             className="hidden lg:block relative min-h-[600px] w-full order-1 lg:order-none sticky top-24"
                         >
-                            <div className="absolute inset-0 rounded-2xl overflow-hidden shadow-2xl border border-white/10 h-[600px]">
+                            <div className="absolute inset-0 rounded-2xl overflow-hidden shadow-2xl border border-white/10 h-[600px] grayscale hover:grayscale-0 transition-all duration-700 ease-in-out group">
                                 <img
                                     alt="Atmospheric Event Concert"
-                                    className="w-full h-full object-cover transition-transform duration-700 hover:scale-105"
-                                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuBI0EBo19fdXk435jOzfSAMpftMhn9hS0sfgOi3EMEO6uzqCUhBuIehmatQ1W-RrX35il6UyI9UfHhqJufmV5iBIhIeMi5agixzU-rt6r4i_Mp5m0HtB2lOFySEILZfn24Tt7-Jp5ne9EZbgCAWKMHIwdRq5_FSztQZSGNSFXnIcqOIRCse_y6dGqg07Ak1vE1ZYNAN3j6xHuJeQANrdl5FDc6uBtM5gv8O3onVm8wrMhnP8e9uoyMt4amg6IIFDYji6_pU93ON2CB5"
+                                    className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+                                    src="/images/service.png"
                                 />
                                 <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent"></div>
                             </div>

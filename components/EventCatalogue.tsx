@@ -28,60 +28,52 @@ export default function EventCatalogue() {
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
                 {[
                     {
-                        title: "Recognition Ceremony: Honoring Excellence",
-                        tags: "Conferences • Reception • Achievement",
-                        image:
-                            "https://lh3.googleusercontent.com/aida-public/AB6AXuADPi1L65SOfkQqlsF68mQNJsmJoTekyDmlKUO6FbzTwDPcz6EnxvnzlbsPPZq4e9mKMJ9fsyYSC7uABZMfgXELBXX91CRrfoixWHVi0YVt8SRSw8LWTsx6jzhg8XuGhlfMNW7VeIp9aVZg7yuoL22myfAsK4Ta35oCb87XRLcu8YWcQAWts4ExyLSK5_0N4NXAdPN0JyL41g8LkZIGkehkwg9e4WvEeRgRNhSVtkZPBBDdh4DtaSFpCt1gDautLkJ_zBJRlUja2Qdd",
-                        type: "Conference",
+                        title: "Events Management: Seamless Execution",
+                        tags: "Planning • Execution • Coordination",
+                        image: "/images/1.png",
+                        type: "Event",
                     },
                     {
-                        title: "Affiliate Night: Exclusive Event",
-                        tags: "VIP • Affiliate • Elite",
-                        image:
-                            "https://lh3.googleusercontent.com/aida-public/AB6AXuC0yHvIxLRBf0xCHIoObyQHR8dL6LNKVIJdCqYslaz-ELrnhKhgbf7okrilH1uvZmHb465ZMJPEUmYDVaWBbAhJY0e9OMjocfAlidJKQpT0nhOvRWdY_EDkWjlkl1-4Pj5Oyz9wkuKF31S_JqfIgK7WvK-B7QEZBuOB0BtY6AGjdjWMJP9--G9bWszQVdnvxyBl_cPgc7StNrBl58rk7qv5kmVZX_iznwagjjI_4UAhYbY0Czdrtymudjfkr0izCdm4RqTmuPtCZgex",
-                        type: "Networking",
-                    },
-                    {
-                        title: "Corporate Seminar: Leadership & Growth",
-                        tags: "Leadership • Growth • Corporate",
-                        image:
-                            "https://lh3.googleusercontent.com/aida-public/AB6AXuBX875PQdil2Vi4y1Aud8u4Pn4zrzlpIQelT7gyoCM7tx8wIkFe3Ya9y65wRMSTx2S5k1dMwrHK67UUDkMDBGAn26lulbgYkgE8v4cUyvWuoDbPBpBivLq6ZRC743qQIc3Bw5_LOapX19KEPrEfqhgCjEVXmlmWevhl-W9Iv6KKDQHzDvqgHfn7lbMBBpwaULThTk7qZ4_G74YTWkQHnzVSUCk6o2zn_Q_mHz1FhVU0DC1mMNkZ0HGWM3tRexL7NSuLgg4k2BNGDisR",
-                        type: "Seminar",
-                    },
-                    {
-                        title: "Retail Activation: In-Store Engagement",
-                        tags: "Retail • Activation • Engagement",
-                        image:
-                            "https://lh3.googleusercontent.com/aida-public/AB6AXuDRvXzHRnL_yVqT9XXSafluqyrtNDZph-E_lm0zTkMR9qjqPBQqILqmZiLClP4x_iu5axeIKTelpeyNh3pMSMLM6vbqiKaJYBb82E6JPtrhin5z251GvIjibwRE2QFd0IdsWohJwlhi3u4W6XsvqRbh_lQE4eHLZtIAzMXfWTHXzXO5ZUqRQDHk0uoJJUha_Bi0Hkld_daFyPFgj_PZTppGkQ4Dpk6o7dDZHjCvNGodLwn13ng6bUsLZVtPuNEvy3yLllY5ezlxujEc",
+                        title: "Retail Activation: In-Store Experiences",
+                        tags: "Engagement • Retail • Brand Presence",
+                        image: "/images/2.png",
                         type: "Retail",
                     },
                     {
-                        title: "Recognition Ceremony: Honoring Excellence",
-                        tags: "Conferences • Reception • Achievement",
-                        image:
-                            "https://lh3.googleusercontent.com/aida-public/AB6AXuADPi1L65SOfkQqlsF68mQNJsmJoTekyDmlKUO6FbzTwDPcz6EnxvnzlbsPPZq4e9mKMJ9fsyYSC7uABZMfgXELBXX91CRrfoixWHVi0YVt8SRSw8LWTsx6jzhg8XuGhlfMNW7VeIp9aVZg7yuoL22myfAsK4Ta35oCb87XRLcu8YWcQAWts4ExyLSK5_0N4NXAdPN0JyL41g8LkZIGkehkwg9e4WvEeRgRNhSVtkZPBBDdh4DtaSFpCt1gDautLkJ_zBJRlUja2Qdd",
-                        type: "Conference",
+                        title: "Product Launch: Strategic Unveilings",
+                        tags: "Strategy • Buzz • Audience",
+                        image: "/images/3.png",
+                        type: "Launch",
                     },
                     {
-                        title: "Affiliate Night: Exclusive Event",
-                        tags: "VIP • Affiliate • Elite",
-                        image:
-                            "https://lh3.googleusercontent.com/aida-public/AB6AXuC0yHvIxLRBf0xCHIoObyQHR8dL6LNKVIJdCqYslaz-ELrnhKhgbf7okrilH1uvZmHb465ZMJPEUmYDVaWBbAhJY0e9OMjocfAlidJKQpT0nhOvRWdY_EDkWjlkl1-4Pj5Oyz9wkuKF31S_JqfIgK7WvK-B7QEZBuOB0BtY6AGjdjWMJP9--G9bWszQVdnvxyBl_cPgc7StNrBl58rk7qv5kmVZX_iznwagjjI_4UAhYbY0Czdrtymudjfkr0izCdm4RqTmuPtCZgex",
-                        type: "Networking",
+                        title: "Award Function: Honoring Excellence",
+                        tags: "Awards • Ceremonies • Achievements",
+                        image: "/images/4.png",
+                        type: "Ceremony",
                     },
                     {
-                        title: "Retail Activation: In-Store Engagement",
-                        tags: "Retail • Activation • Engagement",
-                        image:
-                            "https://lh3.googleusercontent.com/aida-public/AB6AXuDRvXzHRnL_yVqT9XXSafluqyrtNDZph-E_lm0zTkMR9qjqPBQqILqmZiLClP4x_iu5axeIKTelpeyNh3pMSMLM6vbqiKaJYBb82E6JPtrhin5z251GvIjibwRE2QFd0IdsWohJwlhi3u4W6XsvqRbh_lQE4eHLZtIAzMXfWTHXzXO5ZUqRQDHk0uoJJUha_Bi0Hkld_daFyPFgj_PZTppGkQ4Dpk6o7dDZHjCvNGodLwn13ng6bUsLZVtPuNEvy3yLllY5ezlxujEc",
-                        type: "Retail",
+                        title: "Roadshow: Mobile Experiences",
+                        tags: "Mobile • Direct Reach • Engagement",
+                        image: "/images/5.png",
+                        type: "Roadshow",
                     },
                     {
-                        title: "Recognition Ceremony: Honoring Excellence",
-                        tags: "Conferences • Reception • Achievement",
-                        image:
-                            "https://lh3.googleusercontent.com/aida-public/AB6AXuADPi1L65SOfkQqlsF68mQNJsmJoTekyDmlKUO6FbzTwDPcz6EnxvnzlbsPPZq4e9mKMJ9fsyYSC7uABZMfgXELBXX91CRrfoixWHVi0YVt8SRSw8LWTsx6jzhg8XuGhlfMNW7VeIp9aVZg7yuoL22myfAsK4Ta35oCb87XRLcu8YWcQAWts4ExyLSK5_0N4NXAdPN0JyL41g8LkZIGkehkwg9e4WvEeRgRNhSVtkZPBBDdh4DtaSFpCt1gDautLkJ_zBJRlUja2Qdd",
-                        type: "Conference",
+                        title: "Audit Survey Program: Data-Driven Insights",
+                        tags: "Data • Audits • Compliance",
+                        image: "/images/6.png",
+                        type: "Survey",
+                    },
+                    {
+                        title: "Corporate Events: Professional Gatherings",
+                        tags: "Conferences • Seminars • Corporate",
+                        image: "/images/7.png",
+                        type: "Corporate",
+                    },
+                    {
+                        title: "Web Development: Digital Solutions",
+                        tags: "Websites • Digital • Custom Software",
+                        image: "/images/3.png",
+                        type: "Digital",
                     },
                 ].map((event, index) => (
                     <motion.div
@@ -92,7 +84,7 @@ export default function EventCatalogue() {
                         transition={{ duration: 0.5, delay: index * 0.1 }}
                         className="group cursor-pointer"
                     >
-                        <div className="relative h-[400px] overflow-hidden rounded-2xl mb-4">
+                        <div className="relative h-[400px] overflow-hidden rounded-2xl mb-4 grayscale group-hover:grayscale-0 transition-all duration-700 ease-in-out">
                             <img
                                 alt={event.type}
                                 className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
