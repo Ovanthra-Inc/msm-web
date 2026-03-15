@@ -50,7 +50,7 @@ export default function WeddingSection() {
       <div className="w-full border-t border-white/10 mt-8 md:mt-12 mb-12 md:mb-16"></div>
 
       {/* Features & Stats Area */}
-      <div className="max-w-[1280px] w-full px-4 flex flex-col items-center relative pb-24 md:pb-32">
+      <div className="max-w-[1280px] w-full px-4 flex flex-col items-center relative pb-12 md:pb-20">
         <h3 className="text-white text-3xl md:text-4xl lg:text-[3.5rem] font-serif text-center leading-tight mb-20 md:mb-32 z-10 px-4">
           Crafting Extraordinary Events With
           <br className="hidden sm:block" />

@@ -63,18 +63,6 @@ export default function EventCatalogue() {
                         image: "/images/6.png",
                         type: "Survey",
                     },
-                    {
-                        title: "Corporate Events: Professional Gatherings",
-                        tags: "Conferences • Seminars • Corporate",
-                        image: "/images/7.png",
-                        type: "Corporate",
-                    },
-                    {
-                        title: "Web Development: Digital Solutions",
-                        tags: "Websites • Digital • Custom Software",
-                        image: "/images/3.png",
-                        type: "Digital",
-                    },
                 ].map((event, index) => (
                     <motion.div
                         key={index}

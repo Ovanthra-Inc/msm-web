@@ -5,7 +5,7 @@ import { motion } from "motion/react";
 export default function About() {
     return (
         <div id="about">
-            <section className="relative py-20 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
+            {/* <section className="relative py-20 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
                 <div className="flex flex-col md:flex-row justify-between items-start md:items-end gap-12">
                     <motion.div
                         initial={{ opacity: 0, x: -20 }}
@@ -33,7 +33,7 @@ export default function About() {
                         </p>
                     </motion.div>
                 </div>
-            </section>
+            </section> */}
             <section className="py-24 bg-[#121212] relative overflow-hidden border-y border-white/5">
                 <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-primary/5 rounded-full blur-[120px] pointer-events-none translate-x-1/2 -translate-y-1/2"></div>
                 <div className="absolute bottom-0 left-0 w-[400px] h-[400px] bg-primary/5 rounded-full blur-[100px] pointer-events-none -translate-x-1/3 translate-y-1/3"></div>

@@ -113,16 +113,16 @@ export default function Navbar() {
     return (
         <header
             className={`sticky top-0 z-50 w-full transition-all duration-300 ${isScrolled
-                ? "bg-background/95 backdrop-blur-md border-b border-border/40"
+                ? "bg-background/20 backdrop-blur-md border-b border-border/40"
                 : "bg-background border-b border-border/40"
                 }`}
         >
             <div className="max-w-7xl mx-auto px-6 md:px-8">
-                <div className="flex h-16 items-center justify-between">
+                <div className="flex h-20 items-center justify-between">
                     {/* Logo */}
                     <div className="flex items-center gap-2 mr-4">
                         <Link href="/" className="flex items-center gap-2 font-display text-xl font-bold tracking-tight text-foreground">
-                            MSM<span className="text-orange-500">.</span>
+                            <img src="/assets/golden-logo-removebg-v2.png" alt="MSM Logo" className="h-20 w-auto object-contain" />
                         </Link>
                     </div>
 
