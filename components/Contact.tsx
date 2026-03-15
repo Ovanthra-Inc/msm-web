@@ -2,6 +2,7 @@
 
 import { motion, AnimatePresence } from "motion/react";
 import { useState } from "react";
+import { fetchWithTimeout, APIError } from "@/lib/api";
 
 export default function Quiz() {
     const [currentStep, setCurrentStep] = useState(0);
@@ -109,7 +110,7 @@ export default function Quiz() {
                     details: formData.details.trim(),
                 };
 
-                const response = await fetch(`${apiUrl}/api/quiz`, {
+                const response = await fetchWithTimeout(`${apiUrl}/api/quiz`, {
                     method: "POST",
                     headers: {
                         "Content-Type": "application/json",
@@ -117,13 +118,7 @@ export default function Quiz() {
                     body: JSON.stringify(cleanData),
                 });
 
-                const data = await response.json();
-
-                if (!response.ok) {
-                    throw new Error(data.message || "Failed to submit quiz");
-                }
-
-                // Success
+                // The fetchWithTimeout wrapper throws on error, so if we reach here it was successfully 2xx OK
                 alert("Thank you! We will be in touch shortly.");
                 setCurrentStep(0);
                 setFormData({
@@ -139,11 +134,11 @@ export default function Quiz() {
             } catch (err: any) {
                 console.error("Error submitting quiz:", err);
 
-                // Provide user-friendly error messages
-                if (err.message.includes("fetch")) {
-                    setError("Unable to connect to server. Please check your connection and try again.");
+                // Use the standardized APIError message
+                if (err instanceof APIError) {
+                    setError(err.message);
                 } else {
-                    setError(err.message || "Failed to submit. Please try again.");
+                    setError("Failed to submit. Please try again.");
                 }
             } finally {
                 setIsSubmitting(false);

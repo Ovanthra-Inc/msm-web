@@ -2,6 +2,7 @@
 
 import { motion, AnimatePresence } from "motion/react";
 import { useState } from "react";
+import { fetchWithTimeout, APIError } from "@/lib/api";
 
 interface RateModalProps {
     isOpen: boolean;
@@ -60,7 +61,8 @@ export default function RateModal({ isOpen, onClose }: RateModalProps) {
                 throw new Error("API configuration error. Please contact support.");
             }
 
-            const response = await fetch(`${apiUrl}/api/ratings`, {
+            // `fetchWithTimeout` throws if the status isn't 2xx
+            const response = await fetchWithTimeout(`${apiUrl}/api/ratings`, {
                 method: "POST",
                 headers: {
                     "Content-Type": "application/json",
@@ -70,13 +72,8 @@ export default function RateModal({ isOpen, onClose }: RateModalProps) {
                     rating,
                     comments: comments.trim(),
                 }),
+                timeoutMs: 15000 // Give ratings a slightly longer timeout just in case
             });
-
-            const data = await response.json();
-
-            if (!response.ok) {
-                throw new Error(data.message || "Failed to submit rating");
-            }
 
             // Success
             alert("Thank you for your feedback!");
@@ -87,11 +84,11 @@ export default function RateModal({ isOpen, onClose }: RateModalProps) {
         } catch (err: any) {
             console.error("Error submitting rating:", err);
 
-            // Provide user-friendly error messages
-            if (err.message.includes("fetch")) {
-                setError("Unable to connect to server. Please check your connection and try again.");
+            // Use our standardized error descriptions
+            if (err instanceof APIError) {
+                setError(err.message);
             } else {
-                setError(err.message || "Failed to submit rating. Please try again.");
+                setError("Failed to submit rating. Please try again.");
             }
         } finally {
             setIsSubmitting(false);
